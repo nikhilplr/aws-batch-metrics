@@ -2,6 +2,7 @@
  
 This Python Lambda function is designed to monitor AWS Batch Job and EMR state changes and send custom metrics to CloudWatch. It captures events triggered by predefined rules, processing data for key status updates.
 The function is triggered when events match these patterns:
+For AWS Batch Job State Changes:
 ```
 event_pattern = jsonencode({
     "source": ["aws.batch"],
